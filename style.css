@@ -1,0 +1,171 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.title{
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(62, 60, 60);
+    text-align: center;
+    padding:15px;
+    margin-bottom: 0;
+    border-bottom: 3px solid rgb(80, 78, 78);
+}
+
+.spiral{
+    font-size:30px;
+    animation: spin 1.5s infinite linear;
+
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.loading{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.show{
+    visibility: visible;
+}
+.square-box{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    border:2px solid rgb(109, 106, 106);
+    
+}
+.row-1{
+    display:grid;
+    width:20%;
+    padding: 15px;
+    grid-template-areas: "1 2 3 4 5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+}
+.row-2{
+    display:grid;
+    width:20%;
+    padding: 15px;
+    grid-template-areas: "1 2 3 4 5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+}
+.row-3{
+    display:grid;
+    width:20%;
+    padding: 15px;
+    grid-template-areas: "1 2 3 4 5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+}
+.row-4{
+    display:grid;
+    width:20%;
+    padding: 15px;
+    grid-template-areas: "1 2 3 4 5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+}
+.row-5{
+    display:grid;
+    width:20%;
+    padding: 15px;
+    grid-template-areas: "1 2 3 4 5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+}
+.row-6{
+    display:grid;
+    width:20%;
+    padding: 15px;
+    grid-template-areas: "1 2 3 4 5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+}
+.correct{
+    background-color: rgb(24, 176, 24);
+    color:aliceblue;
+}
+.close{
+    background-color: rgb(232, 167, 47);
+    color:aliceblue;
+}
+.wrong{
+    background-color: rgb(149, 146, 146);
+    color: aliceblue;
+}
+.invalid
+{
+    animation: flash 1s;
+}
+.winner
+{
+    animation: rainbow 3.5s infinite linear;
+}
+@keyframes flash
+{
+    5%{
+        border-color: crimson;
+
+    }
+    100%{
+        border-color: white;
+    }
+}
+@keyframes rainbow{
+    0% {
+  color:rgb(255,0,0);
+    }
+     8% {
+      
+  color:rgb(255 ,127 , 0);
+    }
+      16% { 
+  color:rgb(255,255,0);
+    }
+      25% {
+  color:rgb(127,255,0);
+        
+    }
+      35% {
+  color:rgb(0,255,0);
+    }
+      43% {
+  color:rgb(0,127,0);
+    }
+      55% {
+  color:rgb(255,0,255);
+    }
+      64% {
+  color:rgb(127,127,255);
+      }
+     75% {
+  color:rgb(255,0,127);
+    }
+      83% {
+  color:rgb(255,127,0);
+    }
+      91% {
+  color:rgb(255,0,0);
+    }
+          100% {
+  color:rgb(127,0,0);
+          }
+        }
